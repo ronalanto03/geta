@@ -1,15 +1,20 @@
 {
-  "name": "sample",
+  "name": "client",
   "version": "0.0.0",
   "license": "MIT",
+  "angular-cli": {},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "pree2e": "webdriver-manager update",
+    "preinstall": "npm install -g node-gyp",
+    "heroku-postbuild": "ng build -prod",
+    "e2e": "protractor"
   },
+
+
   "private": true,
   "dependencies": {
     "@agm/core": "^1.0.0-beta.1",
@@ -24,9 +29,7 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14"
-  },
-  "devDependencies": {
+    "zone.js": "^0.8.14",
     "@angular/cli": "1.4.1",
     "@angular/compiler-cli": "^4.2.4",
     "@angular/language-service": "^4.2.4",
@@ -46,5 +49,8 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
+
+  },
+  "devDependencies": {
   }
 }

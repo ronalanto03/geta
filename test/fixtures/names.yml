@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  category: MyString
+  status: false
+  address: 
+
+two:
+  description: MyString
+  category: MyString
+  status: false
+  address: 

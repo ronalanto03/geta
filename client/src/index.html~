@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+    <app>Loading...</app>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="./src/app/js/jquery-1.11.3.min.js"></script>
+  <script src="./src/app/js/bootstrap.min.js"></script>
+  <script src="./src/app/js/script.js"></script>
+
+</body>
+</html>

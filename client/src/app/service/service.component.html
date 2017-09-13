@@ -1,0 +1,25 @@
+﻿<div *ngIf="service" class="col-md-12 col-sm-12 col-xs-12 service" >
+  <div class="box-info">
+    <div class="title"><h2>{{service.name}}</h2></div>
+    <!-- <div class="active-indicator">Active</div> -->
+    <div *ngIf = "service.status" class="active-indicator">Active</div>
+    <div *ngIf = "!service.status" class="inactive-indicator">Inactive</div>
+
+    <p class="description">{{service.description}}</p>
+<!--     <div class="distance-box">
+    </div>
+ -->
+ </div>
+
+  <agm-map class="col-col-md-10 offset-md-1 col-sm-10 col-xs-12" [latitude]="service.coordinates[0]" [longitude]="service.coordinates[1]">
+    <agm-marker style="height: 20px; width: 20px;"
+    [latitude]="service.coordinates[0]"
+    [longitude]="service.coordinates[1]">
+
+      <agm-info-window #infoWindow>
+        <strong>{{service.name}}</strong>
+      </agm-info-window>
+    </agm-marker>
+
+  </agm-map>
+</div>

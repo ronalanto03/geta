@@ -1,0 +1,79 @@
+.service {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.service:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.service h2 {
+  padding: 0 30px 0;
+  margin: 0;
+  width: 95%;
+  padding-top: 20px;
+}
+
+.description {
+  padding: 10px 10px 0;
+
+  margin: 0;
+  width: 95%;	
+  float: left;
+}
+
+.title {
+    width: 90%;
+    margin: 0 10 0 0%;
+    float: left;
+    padding: 0;
+}
+
+.active-indicator {
+    margin: 0 0 0 90%;
+    width: 10%;
+    background: #2A8220;/*#65F954;*/
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+ }
+
+
+.inactive-indicator {
+    margin: 0 0 0 90%;
+    width: 10%;
+    background: red;/*#65F954;*/
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+ }
+
+
+a{  
+  padding: 0;
+  margin: 0;
+}
+
+.box-info {
+  margin-bottom: 100px;
+}  
+
+
+li {
+  list-style: none;
+}
+
+agm-map {
+  height: 300px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}

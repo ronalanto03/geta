@@ -1,0 +1,72 @@
+#header-nav {
+  border-radius: 0;
+  border: 0;
+  background: black;
+  color:white;
+}
+
+.filters-box {
+  border-width: 1px;
+  border-color: gray;
+  background: white;
+  color:black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+#nav-list a:hover {
+  background: #E7E7E7;
+  color:black;
+}
+
+
+#navbar-brand {
+  color:white;
+  font-weight: bold;
+}
+
+.divider-10{ 
+  width:1px; 
+  min-height:1px; 
+  margin-top:10px; 
+  margin-bottom:10px;  
+  display:inline-block; 
+  position:relative;
+  color: white;
+  background-color: white;
+}
+
+#header-nav {
+/*      position: fixed;
+      top: 0;
+      z-index: 1;
+*//*      left: 0;      
+      right: 0;     
+      bottom: 0;     
+*/  }
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: white;
+}
+
+.navbar-toggler:hover{
+  background-color: white;  
+}
+
+.navbar-toggler:hover .icon-bar {
+      background-color: black;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+      margin-top: 4px;
+}

@@ -1,0 +1,138 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #999999;
+  border-radius: 0;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px 0px 2px 0px;
+}
+
+
+.navbar-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  background: #E7E7E7;
+  text-align: center;
+  border: 1px solid black;
+
+}
+#nav-list a:hover {
+  background: #999980;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: black;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  border-color: white;
+  background-color: #999999;
+}
+
+/* END HEADER */
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    /*color: #951c49;*/
+  }
+}
+  /* End Header */
+
+
+/* Main-Container*/
+.column-food{
+  background-color: #999999;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 0px;
+  overflow: hidden;
+  padding: 10px;
+}
+.column-food h3{
+  margin-top: 3px;
+}
+.container h1{
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: .75;
+  border-color: black;
+  border: 10;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .column-food{
+    width: 80%;
+    margin-left: 10%;
+
+  }
+}

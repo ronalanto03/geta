@@ -1,0 +1,40 @@
+﻿<nav id="header-nav" class="navbar navbar-toggleable-md navbar sticky-top navbar-light bg-lightbg-faded col-sm-12">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <div class="navbar-brand" href="#" id="navbar-brand">geta</div>
+
+
+  <div class="collapse navbar-collapse col-sm-11" id="navbarSupportedContent">
+    <ul id="nav-list" class="navbar-nav col-sm-12">
+
+      <li class="mr-auto p-2 col-sm-10">
+        <form class="form-inline">
+          <input class="form-control col-sm-8" type="text" placeholder="Search">
+          <button class="btn btn-outline-success black-button" type="submit">Search</button>
+          <button class="btn btn-outline-success black-button" type="submit" (click)="toggle()">Filters</button>
+        </form>
+      </li>
+
+
+       <li class="divider-10"></li>
+
+       <li class="nav-item active p-2">
+         <a class="nav-link" id="navbar-brand" [routerLink]="['/login']">logout <span class="sr-only">(current)</span></a>
+       </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<div class="filters-box" *ngIf="opened">
+  <select class="offset-sm-4 btn btn-outline-success black-button">
+  <option>"hi"</option>
+  <option>"hi you"</option>
+</select>
+</div>

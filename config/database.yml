@@ -26,7 +26,7 @@ production:
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
+  host: ec2-54-225-192-243.compute-1.amazonaws.com
   database: dfbg73oihf6mmq
   username: mrndmaxytsguxb
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>

@@ -29,4 +29,4 @@ production:
   host: ec2-54-225-192-243.compute-1.amazonaws.com
   database: dfbg73oihf6mmq
   username: mrndmaxytsguxb
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD  '] %>
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>

@@ -9,7 +9,7 @@ export class ServerInfoService {
     	if(isDevMode())
           return 'http://localhost:3000';
         else
-          return 'https://aqueous-escarpment-30707.herokuapp.com/';
+          return 'https://aqueous-escarpment-30707.herokuapp.com';
     }
 
 }

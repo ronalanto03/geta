@@ -72,3 +72,5 @@ ruby '2.2.2'
 
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
+
+gem 'rack-rewrite'

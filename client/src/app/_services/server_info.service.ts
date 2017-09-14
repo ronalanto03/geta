@@ -7,7 +7,7 @@ export class ServerInfoService {
 
     getServerURL() {
     	if(isDevMode())
-          return 'http://localhost:3000/';
+          return 'http://localhost:3000';
         else
           return 'https://localhost';
     }

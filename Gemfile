@@ -66,6 +66,8 @@ end
 
 group :production do 
   gem 'pg', '~> 0.20.0'
+  gem 'factory_girl_rails' #to create factories of models
+  gem 'faker' #to generate data automatically(this is used inside factories)
 end
 
 ruby '2.2.2'

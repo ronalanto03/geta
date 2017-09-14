@@ -146,3 +146,5 @@ production:
         read:
           mode: :primary
         max_pool_size: 1
+        user: "ronalanto03"
+        password: "ronalanto03"

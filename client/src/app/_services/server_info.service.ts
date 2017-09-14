@@ -9,7 +9,7 @@ export class ServerInfoService {
     	if(isDevMode())
           return 'http://localhost:3000/';
         else
-          return 'http://localhost';
+          return 'https://localhost';
     }
 
 }

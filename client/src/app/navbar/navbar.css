@@ -115,8 +115,6 @@ body{
   color:black;
 }
 
-.navbar-collapse { max-width: 100% !important; }
-
 .nav-item {
   text-align: center;
 }

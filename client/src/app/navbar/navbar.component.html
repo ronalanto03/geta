@@ -1,4 +1,4 @@
-﻿<nav id="header-nav" class="navbar navbar-toggleable-md navbar sticky-top navbar-light bg-lightbg-faded col-sm-12">
+﻿<nav id="header-nav" class="navbar navbar-toggleable-sm navbar sticky-top navbar-light bg-lightbg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
@@ -6,25 +6,34 @@
     <span class="icon-bar"></span>
   </button>
 
-  <div class="navbar-brand" href="#" id="navbar-brand">geta</div>
+  <div class="navbar-brand"><h2>geta</h2></div>
 
 
-  <div class="collapse navbar-collapse col-sm-11" id="navbarSupportedContent">
-    <ul id="nav-list" class="navbar-nav col-sm-12">
+  <div class="collapse navbar-collapse col-sm-12 col-md-11" id="navbarSupportedContent">
+    <ul id="nav-list" class="navbar-nav col-sm-12 col-md-12 mr-auto">
 
-      <li class="mr-auto p-2 col-sm-10">
-        <form class="form-inline">
-          <input class="form-control col-sm-8" type="text" placeholder="Search">
-          <button class="btn btn-outline-success black-button" type="submit">Search</button>
-          <button class="btn btn-outline-success black-button" type="submit" (click)="toggle()">Filters</button>
-        </form>
+      <li class="mr-auto p-2 col-md-9 col-sm-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary fa fa-search" type="button"></button>
+          </span>
+          <button id="filter-button" class="btn btn-outline-success black-button" type="submit" (click)="toggle()">Filters</button>
+        </div>
       </li>
 
-
-       <li class="divider-10"></li>
+       <li class="divider-10 hidden-sm-down"></li>
 
        <li class="nav-item active p-2">
-         <a (click)="logOut();" *ngIf="isLoggedin" class="nav-link" id="navbar-brand" [routerLink]="['/login']">logout <span class="sr-only">(current)</span></a>
+         <a (click)="logOut();" *ngIf="isLoggedin" class="nav-link" [routerLink]="['/login']">logout <span class="sr-only">(current)</span></a>
+       </li>
+
+       <li class="nav-item active p-2" *ngIf="!isLoggedin">
+         <a class="nav-link" [routerLink]="['/register']">Register <span class="sr-only">(current)</span></a>
+       </li>
+
+       <li class="nav-item active p-2" *ngIf="!isLoggedin">
+         <a class="nav-link" [routerLink]="['/login']">login <span class="sr-only">(current)</span></a>
        </li>
 
     </ul>

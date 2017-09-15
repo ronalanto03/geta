@@ -66,3 +66,5 @@ client/src/app/**/*~
 client/src/app/**/*.js
 client/src/app/**/*.js.map
 !client/src/app/js/*
+
+config/application.yml

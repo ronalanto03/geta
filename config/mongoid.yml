@@ -135,3 +135,16 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+
+production:
+  clients:
+    default:
+      database: geta_mongodb
+      hosts:
+        - ds135534.mlab.com:35534
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+        user: "ronalanto03"
+        password: "ronalanto03"

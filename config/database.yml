@@ -21,5 +21,13 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: ec2-54-225-192-243.compute-1.amazonaws.com
+  database: dfbg73oihf6mmq
+  username: mrndmaxytsguxb
+  password: 648a9f4efa0c4c681ebb493f743ec54f267e9dd6f32e715b7be441f4482a3759
+  #<%= ENV['MYAPP_DATABASE_PASSWORD'] %>

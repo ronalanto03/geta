@@ -21,6 +21,7 @@ import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { ServiceComponent } from './service/index';
 import { NavbarComponent } from './navbar/index';
+import { FooterComponent } from './footer/index';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { NavbarComponent } from './navbar/index';
         LoginComponent,
         RegisterComponent,
         ServiceComponent,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     providers: [
         AuthGuard,

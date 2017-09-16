@@ -7,14 +7,16 @@
 
   float: left;
   padding: 0;
+  margin-top: 10px;
+  padding-bottom: 40px;
   margin: 0;
-  margin-bottom: 12px;
-
-  border-radius: 10px;
+  border-bottom-width: 1px;
+  border-bottom-color: light-gray;
+  border-bottom-style: groove;
 }
 
 .service:hover{
-  box-shadow: 0 1px 5px 1px grey;
+  box-shadow: 0 1px 5px 1px black;
 }
 
 .service h2 {
@@ -71,4 +73,11 @@ a{
 
 li {
   list-style: none;
+}
+
+
+.main-container {
+  border-style: groove;
+  border-width: 1px;
+  border-color: light-gray;
 }

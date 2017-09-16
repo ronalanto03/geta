@@ -1,11 +1,7 @@
-﻿<!-- <div class="col-md-6 col-md-offset-3"> -->
-<div class="col-md-12">
-<!--     <h1>Hi {{currentUser.email}}</h1>
-    <p>You're logged in with Angular 2!!</p>
-    <h3>All registered users:</h3>
- -->    <ul>
+﻿<div class="main-container col-md-10 offset-md-1 no-padding">
+    <ul class="col-md-12 no-padding">
         <li class *ngFor="let service of services">
-                <div class="col-md-12 col-sm-12 col-xs-12 service">
+                <div class="service">
                 <a [routerLink]="['/services', service._id.$oid]" id="box-link">
                      <h2 ><a class="nav-link title" routerLink="home">{{service.name}}</a></h2>
                      <!-- <h5 >{{service.category}}</h5> -->

@@ -3,6 +3,6 @@
 use Rack::Rewrite do
   rewrite %r{^(?!.*(api|\.|oauth)).*$}, '/index.html'
 end
- 
+
 require ::File.expand_path('../config/environment', __FILE__)
 run Rails.application

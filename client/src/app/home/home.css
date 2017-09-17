@@ -42,16 +42,6 @@
     padding-top: 20px;
 }
 
-.active-indicator {
-    margin: 0 0 0 90%;
-    width: 10%;
-    background: #2A8220;/*#65F954;*/
-    padding:5px 5px 5px 5px;
-    text-align: center;
-    color:white;
-    font-weight: bold;
- }
-
 a{
   padding: 0;
   margin: 0;
@@ -73,11 +63,4 @@ a{
 
 li {
   list-style: none;
-}
-
-
-.main-container {
-  border-style: groove;
-  border-width: 1px;
-  border-color: light-gray;
 }

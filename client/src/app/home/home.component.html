@@ -1,18 +1,17 @@
-﻿<div class="main-container col-md-10 offset-md-1 no-padding">
-    <ul class="col-md-12 no-padding">
-        <li class *ngFor="let service of services">
-                <div class="service">
-                <a [routerLink]="['/services', service._id.$oid]" id="box-link">
-                     <h2 ><a class="nav-link title" routerLink="home">{{service.name}}</a></h2>
+﻿<div class="main-container col-md-10 offset-md-1 col-sm-12  no-padding">
+  <ul class="col-md-12 no-padding col-sm-12" >
+    <li class *ngFor="let service of services">
+      <div class="service">
+        <a [routerLink]="['/services', service._id.$oid]" id="box-link">
+          <h2 ><a class="nav-link title" routerLink="home">{{service.name}}</a></h2>
                      <!-- <h5 >{{service.category}}</h5> -->
-                     <div class="active-indicator">Active</div>
-                     <p class="description">{{service.description | slice:0:100}}</p>
-                     <div class="distance-box">
-                     </div>
-                     <!-- <p>{{service._id.$oid}}</p> -->
-                </a>
-                </div>
-        </li>
-    </ul>
-    <p><a [routerLink]="['/login']">Logout</a></p>
+          <div *ngIf = "service.status" class="active-indicator">Active</div>
+          <div *ngIf = "!service.status" class="inactive-indicator">Inactive</div>
+          <p class="description">{{service.description | slice:0:100}}</p>
+          <div class="distance-box">n Kms</div>
+        <!-- <p>{{service._id.$oid}}</p> -->
+        </a>
+      </div>
+    </li>
+  </ul>
 </div>

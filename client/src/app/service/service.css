@@ -36,28 +36,6 @@
     padding: 0;
 }
 
-.active-indicator {
-    margin: 0 0 0 90%;
-    width: 10%;
-    background: #2A8220;/*#65F954;*/
-    padding:5px 5px 5px 5px;
-    text-align: center;
-    color:white;
-    font-weight: bold;
- }
-
-
-.inactive-indicator {
-    margin: 0 0 0 90%;
-    width: 10%;
-    background: red;/*#65F954;*/
-    padding:5px 5px 5px 5px;
-    text-align: center;
-    color:white;
-    font-weight: bold;
- }
-
-
 a{  
   padding: 0;
   margin: 0;

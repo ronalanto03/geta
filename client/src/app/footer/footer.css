@@ -3,7 +3,10 @@
 {
 	clear: both;
 	bottom: 0;
-	position:fixed;
+	padding: 2em;
+
+	position:relative;
+
 	width: 100%;
     background-color:black;
 

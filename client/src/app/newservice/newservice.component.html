@@ -1,0 +1,74 @@
+<div class="col-md-6 offset-md-3">
+
+
+    <form class="formNewService" [formGroup]="userForm" (ngSubmit)="onSubmit()" >
+    <h2 >New Service</h2>
+
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" #refName class="form-control" formControlName="name">
+
+            <div *ngIf="userForm.controls['name'].hasError('required') && refName.touched" class="alert alert-danger">
+                <p>Please enter a Service's Name</p>
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea rows="4" id="description"  #refDescription refDescription.touched class="form-control" formControlName="description"></textarea>
+
+
+            <div *ngIf="userForm.controls['description'].hasError('required') && refDescription.touched" class="alert alert-danger">
+                <p>Please enter your Description</p>
+            </div>
+
+        </div>
+
+
+
+        <div formGroupName="address">
+
+                <div class="form-group">
+                    <label for="">Category</label>
+                    <input type="text" class="form-control" formControlName="category">
+                </div>
+
+<!--                 <div class="form-group">
+                    <label for="">Status</label>
+                    <input type="text" class="form-control" formControlName="status">
+                </div> -->
+
+
+                <div class="form-group">
+                    <label for="sel1">Status</label>
+                    <select class="form-control" formControlName="status" id="sel1">
+                        <option  class="active">Active</option>
+                        <option class="inactive">Inactive</option>
+
+                  </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Coordinates</label>
+                    <input type="text" #refPostalcode   class="form-control" formControlName="coordinates">
+
+                    <div *ngIf="userForm.controls['address'].controls['coordinates'].hasError('pattern') && refPostalcode.untouched" class="alert alert-danger">
+                        <p>Please Postal code needs if format five numbers</p>
+                    </div>
+
+                </div>
+        </div>
+
+
+
+        <div class="text-center">
+             <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary btn-sx btn-M"> Submit</button>
+        </div>
+
+    </form>
+
+
+
+</div>

@@ -1,0 +1,42 @@
+,
+input.ng-invalid{
+	border-left: 5px solid red;
+}
+input.ng-valid {
+	border-left: 5px solid green;
+}
+
+h2{
+
+	color: #000;
+	border: 1px;
+	text-align: center;
+	font-family: arial;
+
+}
+
+.active {
+	color: green;
+}
+
+.inactive{
+	color: red;
+}
+
+.btn-M{
+	margin:  10px;
+	align-content: center;
+	 border-radius: 2px;
+	 /*color: black;*/
+	 /*border: 2px solid black;*/
+
+}
+
+.formNewService{
+	 background-color:#FAFAFA;
+	 padding: 20px;
+	 border-radius: 10px;
+	 border: 2px solid black;
+	 margin: 25px;
+	 box-shadow: 10px 10px 5px #888888;
+}

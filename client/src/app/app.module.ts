@@ -1,6 +1,7 @@
 ﻿import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
+import { ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // used to create fake backend
@@ -22,12 +23,14 @@ import { RegisterComponent } from './register/index';
 import { ServiceComponent } from './service/index';
 import { NavbarComponent } from './navbar/index';
 import { FooterComponent } from './footer/index';
+import { NewServiceComponent } from './newservice/index';
 
 
 @NgModule({
     imports: [
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         HttpModule,
         routing,
         AgmCoreModule.forRoot({
@@ -41,7 +44,8 @@ import { FooterComponent } from './footer/index';
         RegisterComponent,
         ServiceComponent,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        NewServiceComponent
     ],
     providers: [
         AuthGuard,

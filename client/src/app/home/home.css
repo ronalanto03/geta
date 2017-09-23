@@ -64,3 +64,42 @@ a{
 li {
   list-style: none;
 }
+
+
+.active-indicator {
+    margin: 0 0 0 90%;
+    width: 10%;
+    background: #2A8220;/*#65F954;*/
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+ }
+
+.inactive-indicator {
+    margin: 0 0 0 90%;
+    width: 10%;
+    background: red;/*#65F954;*/
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+ }
+
+
+/********** Extra small devices only **********/
+@media (max-width: 576px) {
+.active-indicator {
+    margin: 0 0 0 80%;
+    width: 20%;
+    /*background: yellow;*/
+ }
+ .title {
+    width: 80%;
+}
+.inactive-indicator {
+    margin: 0 0 0 80%;
+    width: 20%;
+
+}
+}

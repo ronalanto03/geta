@@ -12,9 +12,30 @@
   <div class="collapse navbar-collapse col-sm-12 col-md-11" id="navbarSupportedContent">
     <ul id="nav-list" class="navbar-nav col-sm-12 col-md-12 mr-auto">
 
-      <li class="mr-auto p-2 col-md-9 col-sm-12">
+
+
+      <li  class="nav-item active p-2">
+
+          <a class="nav-item nav-link" href="mainhome#about">About</a>
+      </li>
+
+      <li class="nav-item active p-2">
+          <a class="nav-item nav-link" href="mainhome#services">Services</a>
+      </li>
+
+      <li class="nav-item active p-2">
+
+          <a class="nav-item nav-link" href="#">Features</a>
+      </li>
+
+      <li class="nav-item active p-2">
+          <a class="nav-item nav-link" href="mainhome#contacts">Contacts</a>
+
+      </li>
+
+      <li class="mr-auto p-2 col-md-6 col-sm-12">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
+          <input type="text" class="form-control col-md-9" placeholder="Search for...">
           <span class="input-group-btn">
             <button class="btn btn-secondary fa fa-search" type="button"></button>
           </span>
@@ -22,10 +43,15 @@
         </div>
       </li>
 
+
        <li class="divider-10 hidden-sm-down"></li>
 
        <li class="nav-item active p-2">
          <a (click)="logOut();" *ngIf="isLoggedin" class="nav-link" [routerLink]="['/login']">logout <span class="sr-only">(current)</span></a>
+       </li>
+
+       <li class="nav-item active p-2">
+         <a  *ngIf="isLoggedin" class="nav-link" [routerLink]="['/newservice']">AddService <span class="sr-only">(current)</span></a>
        </li>
 
        <li class="nav-item active p-2" *ngIf="!isLoggedin">

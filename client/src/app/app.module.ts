@@ -24,6 +24,8 @@ import { ServiceComponent } from './service/index';
 import { NavbarComponent } from './navbar/index';
 import { FooterComponent } from './footer/index';
 import { NewServiceComponent } from './newservice/index';
+import { MainHomeComponent } from './mainhome/index';
+import {  } from './images';
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import { NewServiceComponent } from './newservice/index';
         ServiceComponent,
         NavbarComponent,
         FooterComponent,
-        NewServiceComponent
+        NewServiceComponent,
+        MainHomeComponent
     ],
     providers: [
         AuthGuard,

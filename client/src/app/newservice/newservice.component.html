@@ -2,10 +2,16 @@
 
 
     <form class="formNewService" [formGroup]="userForm" (ngSubmit)="onSubmit()" >
-    <h2 >New Service</h2>
+    <div class="container">
+
+        <h2 >New Service</h2>
+    </div>
 
         <div class="form-group">
+            <div class="text-center">
+
             <label for="">Name</label>
+            </div>
             <input type="text" #refName class="form-control" formControlName="name">
 
             <div *ngIf="userForm.controls['name'].hasError('required') && refName.touched" class="alert alert-danger">
@@ -16,7 +22,10 @@
         </div>
 
         <div class="form-group">
+
+            <div class="text-center">
             <label for="description">Description</label>
+            </div>
             <textarea rows="4" id="description"  #refDescription refDescription.touched class="form-control" formControlName="description"></textarea>
 
 
@@ -31,7 +40,10 @@
         <div formGroupName="address">
 
                 <div class="form-group">
+
+                <div class="text-center">
                     <label for="">Category</label>
+                </div>
                     <input type="text" class="form-control" formControlName="category">
                 </div>
 
@@ -42,7 +54,11 @@
 
 
                 <div class="form-group">
-                    <label for="sel1">Status</label>
+                    <div class="text-center">
+
+                        <label for="sel1">Status</label>
+                    </div>
+
                     <select class="form-control" formControlName="status" id="sel1">
                         <option  class="active">Active</option>
                         <option class="inactive">Inactive</option>
@@ -51,7 +67,11 @@
                 </div>
 
                 <div class="form-group">
+
+                <div class="text-center">
+
                     <label for="">Coordinates</label>
+                </div>
                     <input type="text" #refPostalcode   class="form-control" formControlName="coordinates">
 
                     <div *ngIf="userForm.controls['address'].controls['coordinates'].hasError('pattern') && refPostalcode.untouched" class="alert alert-danger">

@@ -74,7 +74,7 @@
                 </div>
                     <input type="text" #refPostalcode   class="form-control" formControlName="coordinates">
 
-                    <div *ngIf="userForm.controls['address'].controls['coordinates'].hasError('pattern') && refPostalcode.untouched" class="alert alert-danger">
+                    <div *ngIf="userForm.controls['address']['coordinates'].hasError('pattern') && refPostalcode.untouched" class="alert alert-danger">
                         <p>Please Postal code needs if format five numbers</p>
                     </div>
 

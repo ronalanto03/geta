@@ -11,3 +11,26 @@ body{
 .no-padding {
   padding: 0 !important;
 }
+<<<<<<< HEAD
+=======
+
+html, body {
+    height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 142px; 
+}
+.site-footer {
+  background: orange;
+}
+>>>>>>> 4f3fc0eaeb7cb7332c3e2c78c517e07868416692

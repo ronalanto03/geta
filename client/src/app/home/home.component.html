@@ -1,6 +1,6 @@
-﻿<div class="main-container col-md-10 offset-md-1 col-sm-12 no-padding">
-  <ul class="col-md-12 no-padding col-sm-12" >
-    <li class *ngFor="let service of services">
+﻿<div class="col-md-10 offset-md-1 col-sm-12 no-padding ">
+  <ul >
+    <li *ngFor="let service of services">
       <div class="service">
         <a [routerLink]="['/services', service._id.$oid]" id="box-link">
           <h2 ><a class="nav-link title" routerLink="home">{{service.name}}</a></h2>

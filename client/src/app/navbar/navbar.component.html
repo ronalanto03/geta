@@ -13,40 +13,6 @@
     <ul id="nav-list" class="navbar-nav col-sm-12 col-md-12 mr-auto">
 
 
-
-      <li  class="nav-item active p-2">
-
-          <a class="nav-item nav-link" href="mainhome#about">About</a>
-      </li>
-
-      <li class="nav-item active p-2">
-          <a class="nav-item nav-link" href="mainhome#services">Services</a>
-      </li>
-
-      <li class="nav-item active p-2">
-
-          <a class="nav-item nav-link" href="mainhome#features">Features</a>
-      </li>
-
-      <li class="nav-item active p-2">
-          <a class="nav-item nav-link" href="mainhome#contacts">Contacts</a>
-
-      </li>
-
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-
-
-
       <li class="mr-auto p-2 col-md-6 col-sm-12">
         <div class="input-group">
           <input type="text" class="form-control col-md-9" placeholder="Search for...">
@@ -59,6 +25,18 @@
 
 
        <li class="divider-10 hidden-sm-down"></li>
+
+      <li class="nav-item dropdown p-2  ">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="mainhome#about">About</a>
+            <a class="dropdown-item" href="mainhome#services">Services</a>
+            <a class="dropdown-item" href="mainhome#features">Features</a>
+            <a class="dropdown-item"  href="mainhome#contacts">Contacts</a>
+        </div>
+      </li>
 
        <li class="nav-item active p-2">
          <a (click)="logOut();" *ngIf="isLoggedin" class="nav-link" [routerLink]="['/login']">logout <span class="sr-only">(current)</span></a>

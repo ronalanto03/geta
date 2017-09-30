@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import {ServerInfoService } from './server_info.service'
 
-// import { Service } from '../_models/index';
+import { Service } from '../_models/index';
 
 @Injectable()
 export class ServiceService {
@@ -33,9 +33,9 @@ export class ServiceService {
 
     }
 
-    // create(user: User) {
-    //     return this.http.post('/api/users', user, this.jwt()).map((response: Response) => response.json());
-    // }
+    create(service: Service) {
+        return this.http.post('/api/v1/services', service, this.jwt()).map((response: Response) => response.json());
+    }
 
     // update(user: User) {
     //     return this.http.put('/api/users/' + user.id, user, this.jwt()).map((response: Response) => response.json());

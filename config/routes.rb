@@ -74,6 +74,7 @@ namespace :api do
 
     get 'services' => 'services#index'
     get 'services/:id' => 'services#show'
+    post 'services' => 'services#create'
 
       # post 'sessions' => 'sessions#create', :as => 'login'
       # delete 'sessions' => 'sessions#destroy', :as => 'logout'

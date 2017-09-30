@@ -44,4 +44,30 @@ describe 'Services API', type: :request do
     end
   end
 
+  describe "New service" do
+    it "on success, a new service is created" do
+
+      Service.destroy_all
+      json_content = File.read(File.dirname(__FILE__) + '/services_json/service1.json')
+
+      post "/api/v1/services", json_content
+      expect(response.status).to eq(200), "#{(response.body)['error']}"
+      id = JSON.parse(response.body)['id']
+
+      begin
+        service = Service.find(id)    
+      rescue Mongoid::Errors::DocumentNotFound => e
+        service = nil
+      end
+
+      expect(service).not_to be(nil)
+
+      expect(service.name).to eq(JSON.parse(json_content)['name'])
+      expect(service.description).to eq(JSON.parse(json_content)['description'])
+      expect(service.category).to eq(JSON.parse(json_content)['category'])
+      expect(service.status.to_s).to eq(JSON.parse(json_content)['status'])
+      expect(service.coordinates[0].to_s).to eq(JSON.parse(json_content)['coordinates'][0])
+      expect(service.coordinates[1].to_s).to eq(JSON.parse(json_content)['coordinates'][1])
+    end
+  end
 end
